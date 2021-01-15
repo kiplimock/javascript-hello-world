@@ -2,17 +2,17 @@
 var num = 7;
 
 // ask user for a guess
-var guess = prompt("Guess a number");
+var guess = Number(prompt("Guess a number"));
 
 // check guess
 if(guess < num) {
-    console.log("Too low!");
+    alert("Too low! Guess again");
 }
 
 else if(guess > num) {
-    console.log("Too high!");
+    alert("Too high! Guess again");
 }
 
 else {
-    console.log("You guessed it!");
+    alert("You guessed it!");
 }
