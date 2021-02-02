@@ -83,3 +83,5 @@ function caseSwap(string) {
     return stringArray.join('');
 }
 console.log(caseSwap("The Quick Brown Fox"));
+
+//11. Write a JavaScript function to convert a string into camel case.
