@@ -57,3 +57,10 @@ console.log(`After: ${vegetables}`);
 console.log("\nCopy an array");
 let shallowCopy = fruits.slice();
 console.log(shallowCopy);
+
+// add an element to an index position outside the current bounds
+console.log("\nAdd an element to a position outside array bounds");
+console.log(`Current length: ${fruits.length}`);
+fruits[5] = "Peach";
+console.log(`New array: ${fruits}`);
+console.log(`Updated length: ${fruits.length}`);
