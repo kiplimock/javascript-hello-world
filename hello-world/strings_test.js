@@ -85,3 +85,15 @@ function caseSwap(string) {
 console.log(caseSwap("The Quick Brown Fox"));
 
 //11. Write a JavaScript function to convert a string into camel case.
+console.log("\n11. Write a JavaScript function to convert a string into camel case.");
+function camelize(string) {
+    // split
+    elements = string.split(" ")
+    // capitalize each word
+    for(word of elements) {
+        new_word = word[0].toUpperCase() + word.slice(1);
+        elements.splice(elements.indexOf(word), 1, new_word);
+    }
+    return elements.join('');
+}
+console.log(camelize("JavaScriptExercises"));

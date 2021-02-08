@@ -115,3 +115,4 @@ console.log('\nTrim: ' + " Hello World! ".trim());
 console.log('\nTrimEnd: ' + " Hello World! ".trimEnd());
 console.log('\nTrimStart: ' + " Hello World! ".trimStart());
 
+
