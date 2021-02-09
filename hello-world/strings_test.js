@@ -97,3 +97,25 @@ function camelize(string) {
     return elements.join('');
 }
 console.log(camelize("JavaScriptExercises"));
+
+// 12. Write a JavaScript function to uncamelize a string.
+console.log("\n12. Write a JavaScript function to uncamelize a string.");
+function uncamelize(string, sep=' ') {
+    pos = string.search(/[A-Z](?=[a-z])/g);
+    return string.slice(0,pos) + sep +  string[pos].toLowerCase() + string.slice(pos+1);
+}
+console.log(uncamelize("helloWorld", "-"));
+
+//13. Write a JavaScript function to concatenates a given string n times (default is 1)
+console.log("\n13. Write a JavaScript function to concatenates a given string n times (default is 1)");
+function repeat(string, n=1) {
+    return string.repeat(n);
+}
+console.log(repeat("Ha!",4));
+
+// 14. Write a JavaScript function to insert a string within a string at a particular position (default is 1);
+console.log("\n14. Write a JavaScript function to insert a string within a string at a particular position (default is 1)");
+function insert(str, insertStr='', pos=0) {
+    return str.slice(0, pos) + insertStr + str.slice(pos)
+}
+console.log(insert('We are doing some exercises.','JavaScript ',18));
